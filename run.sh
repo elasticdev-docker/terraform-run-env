@@ -9,7 +9,7 @@ then
     terraform init && \
     terraform plan && \
     terraform apply -auto-approve
-else:
+else
     terraform destroy -auto-approve
 fi
 
