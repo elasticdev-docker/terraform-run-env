@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 export METHOD=${METHOD:=create}
 export SHARE_DIR=${SHARE_DIR:=/var/tmp/share}
