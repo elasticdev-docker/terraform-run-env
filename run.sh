@@ -8,6 +8,8 @@ cd $SHARE_DIR || exit 4
 if [ $METHOD == "create" ]
 then
     terraform init && \
+    chmod -R 777 .terraform
+
     terraform plan && \
     terraform apply -auto-approve || exit 9
     exit 0
@@ -15,6 +17,7 @@ fi
 
 if [ $METHOD == "destroy" ]
 then
+    chmod -R 777 .terraform
     terraform destroy -auto-approve || exit 9
     exit 0
 fi
