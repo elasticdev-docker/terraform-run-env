@@ -1,20 +1,11 @@
 #!/bin/bash
 
-#export METHOD=${METHOD:=create}
+export METHOD=${METHOD:=create}
 export SHARE_DIR=${SHARE_DIR:=/var/tmp/share}
 
-echo "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
 echo ""
-echo $METHOD
-echo $METHOD
-echo $METHOD
-echo $METHOD
+echo "The method is $METHOD"
 echo ""
-echo ""
-env
-echo ""
-echo ""
-echo "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
 
 cd $SHARE_DIR || exit 4
 
