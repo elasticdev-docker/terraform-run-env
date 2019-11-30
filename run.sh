@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export METHOD=${METHOD:=create}
+#export METHOD=${METHOD:=create}
 export SHARE_DIR=${SHARE_DIR:=/var/tmp/share}
 
 echo "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
