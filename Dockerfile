@@ -30,4 +30,4 @@ LABEL org.label-schema.vcs-ref=$VCS_REF \
     org.label-schema.vcs-url="https://github.com/broadinstitute/docker-terraform"
 
 ADD run.sh /bin
-CMD ["/bin/run.sh"]
+ENTRYPOINT ["/bin/run.sh"]
