@@ -6,9 +6,6 @@ VOLUME ["/share"]
 
 WORKDIR /share
 
-#ENTRYPOINT ["/usr/bin/terraform"]
-#CMD ["--help"]
-
 RUN apk update && \
     apk add curl jq python bash ca-certificates git openssl unzip wget && \
     cd /tmp && \
