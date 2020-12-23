@@ -1,11 +1,6 @@
 FROM hashicorp/terraform:0.12.27
 
-ENV TERRAFORM_VERSION=0.12.27
+ADD run.sh /var/tmp/
+RUN chmod 777 /var/tmp/run.sh
 
-VOLUME ["/share"]
-WORKDIR /share
-
-ENV PATH = $PATH:/usr/local/google-cloud-sdk/bin/
-
-ADD run.sh /bin
-ENTRYPOINT ["/bin/run.sh"]
+ENTRYPOINT ["/var/tmp/run.sh"]
